@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    
+
+    <script>
+
+var Sunday=0;
+for(let i=2024; i<=2050; i++){
+
+    var now= new Date(`January 1, ${i}`);
+    if(now.getDay() == 0){
+        document.write(`<h3>  1 January on sunday at year ${i}`)
+            Sunday++
+    }
+}
+document.write("<br>")
+document.write(`<h3> Total Sunday on 1 January Between 2024 to 2050 is: ${Sunday}`)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsk2</title>
+</head>
+<body>
+    
+
+    <script>
+
+var now= new Date()
+
+
+var currentDate = now.getDate();
+if( currentDate < 10){
+    currentDate ="0" + currentDate
+
+}
+
+var currentMonth=now.getMonth() +1;
+
+if(currentMonth < 10){
+    currentMonth= "0" +currentMonth;
+} 
+
+var currentYear= now.getFullYear();
+
+console.log(currentDate);
+console.log(currentMonth);
+console.log(currentYear);
+
+
+document.write("<h1> Date Format:")
+    document.write('<br>')
+
+
+    document.write(`<h4> ${currentMonth}- ${currentDate}-${currentYear}`)
+document.write('<br>')
+
+    document.write(`<h4> ${currentMonth}/${currentDate}/${currentYear}`)
+        document.write('<br>')
+    document.write(`<h4> ${currentDate}- ${currentMonth}-${currentYear}`)
+        document.write('<br>')
+    document.write(`<h4> ${currentDate}/ ${currentMonth}/${currentYear}`)
+
+    </script>
+</body>
+</html>

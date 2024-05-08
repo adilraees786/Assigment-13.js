@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    
+    <script>
+
+
+var daysnames= ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+var now=new Date();
+
+var today= now.getDate();
+var currenthour=now.getHours();
+var currentmint=now.getMinutes();
+var currentseconod=now.getSeconds();
+ 
+var AMPM;
+
+if(currenthour > 12){
+    AMPM="PM"
+    currenthour=currenthour - 12;
+    if(currenthour < 10){
+        currenthour= "0" + currenthour;
+
+    }
+}
+
+else{
+    currenthour=currenthour + 1
+    if(currenthour <10 ){
+        currenthour= "0" +currenthour
+    }
+    AMPM="AM"
+}
+
+if(currentmint < 10){
+    currentmint = "0" +currentmint;
+    
+}
+
+
+if(currentseconod < 10){
+    currentseconod ="0" + currentseconod;
+
+}
+
+document.write(`<h3> Today is: ${today[daysnames]}`)
+    document.write("<br>")
+    document.write(`<h3> Current Time: ${currenthour} ${AMPM} : ${currentmint} : ${currentseconod}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
